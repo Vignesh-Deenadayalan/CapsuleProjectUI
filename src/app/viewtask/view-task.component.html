@@ -1,0 +1,85 @@
+<div class = " container-fluid">
+  <h1>Task Manager</h1>
+  <div class = "container-fluid row">
+  
+    <a [routerLink]="['/addtask']" ><div >Add Task</div></a>
+    <a [routerLink]="['/ViewTask']"><div class = "pad">View Task</div></a>
+  
+    
+  </div>
+  </div>
+  
+  
+  <div class=" top row">
+    <div class="col-md-1">Task:</div>
+  <div class="col-md-4">
+    <input type="text" class = "pad"/></div>
+  <div class="col-md-2 pad1" >Parent Task:</div>
+  <div class="col-md-4">
+    <input type="text" class="pad"/></div>
+  </div>
+  <br>
+  
+  <div class="row">
+  <div class="col-md-3">
+  <div class="form-group">
+      <label>priority from:</label>
+      <input type ="text" class="pad3 "/>
+  </div>
+  </div>
+  <div class="col-md-3">
+  <div class="form-group">
+      <label>priority to:</label>
+      <input type ="text" class="pad3"/>
+  </div>
+  </div>
+  <div class="col-md-3">
+  <div class="form-group">
+      <label>start date:</label>
+      <input type ="text" class="pad4 pad5 pull-right"/>
+  </div>
+  </div>
+  <div class="col-md-3">
+  <div class="form-group">
+      <label>end date:</label>
+      <input type ="text" class="pad4"/>
+  </div>
+  </div>
+  </div>
+  
+  <hr>
+  <div class="success" *ngIf="message">
+    {{message}}
+  </div>
+
+  <div *ngFor="let temp of heroes">
+    <p> </p>
+  <div class="row">
+  <div class="col-sm-3">Task</div>
+  
+     <div class="col-sm-2">Parent</div>
+    <div class="col-sm-1">Priority</div>
+  <div class="col-sm-2">Start</div>
+  <div class="col-sm-1">End</div>
+  </div>
+  
+  
+  <div class="row">
+  <div class="col-sm-5">
+  <div class="box pad8">{{temp.task}}</div>
+  <div class="floatybox box1">{{temp.parentTask}}</div>
+  </div>
+  
+  
+    <div class="col-sm-1">{{temp.priority}}</div>
+  <div class="col-sm-2">{{temp.startDate}}</div>
+  <div class="col-sm-1">{{temp.endDate}}</div>
+  <div class="col-sm-2">
+      <button type="submit" class = "bot" (click)="setRowData(temp)">
+  Edit</button>
+  <button type="submit" class = "bot"(click)="delete(temp)">End Task</button>
+  </div>
+  </div>
+  </div>
+  
+  

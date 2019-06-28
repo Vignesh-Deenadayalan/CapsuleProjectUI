@@ -1,0 +1,80 @@
+<div class = " container-fluid">
+  <h1>Task Manager</h1>
+  <div class = "container-fluid row">
+  
+    <a [routerLink]="['/updateTask']" ><div >Update Task</div></a>
+    
+    
+  </div>
+  </div>
+      <div class="success" *ngIf="message">
+        {{message}}
+      </div>
+  <div class="padtop">
+    <div class="container row pad8">
+      <h4>Task: </h4>
+      <div class="pad1">
+        <input type="text" [(ngModel)]="addTask.task"/> 
+  </div>
+  
+  </div>
+  
+  
+  <div class = "container row pad8">
+  <div>
+  <h4>Priority: </h4> </div>
+  <div class ="pad2" >
+  
+  <input type="range" min="0" max="30" class="slider" [(ngModel)]="addTask.priority"/> 
+  
+  </div>
+  
+  </div>
+  
+  
+  <div class = "container row pad8">
+  
+  <h4>Parent Task: </h4> 
+  <div class ="pad3" >
+  <input type="text" [(ngModel)]="addTask.parentTask" /> 
+  </div>
+  
+  </div>
+  
+  <div class = " container row pad8 ">
+  
+  <h4>Start Date: </h4> 
+  <div class ="pad4" >
+  <input type="text" [(ngModel)]="addTask.startDate" /> 
+  </div>
+  </div>
+  
+  </div>
+  
+  
+  <div class = " container row pad8">
+  
+  <h4>End Date: </h4> 
+  <div class ="pad5" >
+  <input type="text" [(ngModel)]="addTask.endDate" /> 
+  </div>
+  </div>
+  
+  
+  
+  
+  <div class = "container row pad8">
+  
+  <div class ="pad6 pad8" >
+      <input type="button" (click)="update(addTask)" value="Update Task"/>
+  </div>
+  <div class ="pad7 pad8" >
+  <input type="button" (click)="cancel()" value="Cancel"/>
+  </div>
+  
+  </div>
+  
+  
+  
+  
+   

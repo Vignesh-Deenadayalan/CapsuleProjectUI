@@ -1,0 +1,104 @@
+a:link {
+color : black;
+text-decoration: none;
+}
+a:hover, a:active {
+  color:blue;
+}
+.pad{
+padding-left: 30px;
+}
+.pad{
+width:200px;
+}
+.pad1{
+    position:relative;
+    top:10px;
+}
+.pad2{
+    position:relative;
+    top:10px;
+}
+label {
+    /* Other styling.. */
+display: inline-table;
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+.pad3{
+    position:relative;
+    top:10px;
+}
+.pad4{
+    position:relative;
+    top:10px;
+}
+.pad5
+{
+    position:relative;
+    top:10px;
+}
+.box1
+{
+background-color:rgb(240, 240, 240) ;
+width: 200px;
+height: 70px;
+text-align:center;
+}
+
+.box
+{
+background-color:rgb(240, 240, 240) ;
+width: 200px;
+    height: 70px;
+padding-top:20px;
+text-align:center;
+top: 10px;
+}
+.pad8
+{
+position:relative;
+top:10px;
+
+}
+.text {
+
+background-color: gray;
+width: 250px;
+height: 100px;
+} 
+.floatybox {
+     float:right;
+position:relative;
+bottom:60px;
+text-align: center;
+vertical-align: middle;
+line-height: 60px;
+    
+}
+.bot{
+position:relative;
+left:10px;
+}
+.col{
+background-color:rgb(240, 240, 240) ;
+}
+input[type=text] {
+background-color : rgb(240, 240, 240);
+}
+.top{
+  padding-top:50px
+}
+.space{
+padding-left: 20px;
+}
+.success{
+    padding-left : 10px;
+    background-color:yellow;
+    width: 250px;
+    height: 25px;
+    color:black;
+  }
+
